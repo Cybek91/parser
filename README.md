@@ -5,7 +5,7 @@ bundle install
 
 ## To run script:
 ```bash
-ruby bin/log_parser.rb ./webserver.log
+ruby bin/parser.rb ./webserver.log
 ```
 
 ## To run test:
