@@ -20,7 +20,7 @@ module LogHandler
     private
 
     def get_web_pages_and_quantities(data)
-      data.uniq.map(&:first).group_by(&:itself).transform_values(&:count)
+      data.map(&:first).group_by(&:itself).transform_values(&:count)
     end
 
     def sort_by_most_views(data)
